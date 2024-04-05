@@ -1445,6 +1445,16 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.13.2.tgz#851959c4c1c3c6647aba1f388198c8243aed6917"
   integrity sha512-7h7J2nokcdPePdKykd8wtc8QqqkqxIrUz7MHj6aNr8waBRU//NLDVnNjQnqQO6fqtjrtCdftpbTuOKAyrAQETQ==
 
+"@tma.js/sdk-react@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@tma.js/sdk-react/-/sdk-react-2.0.1.tgz#0013203f8bac96090c6001b4f2c480a293874273"
+  integrity sha512-tiCXPctcTf+9ruVzAPlH57zLEUid6PrkJt5sBB1MJ8mwviOvbieUe5QaLLpdzzo+7hdKWr+mOfFu4gM1rYaoNg==
+
+"@tma.js/sdk@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@tma.js/sdk/-/sdk-1.5.1.tgz#f7d3fc92af74e1784e2ba13e88d6313f13a6409c"
+  integrity sha512-M0kzo840GntTuhd6ywYof3DPddhOxM7ODd0JlyJeTsJHexL2D0+REuFPLUNddDh66rUfXOaAdFU79WDVa6wy9A==
+
 "@twa-dev/sdk@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@twa-dev/sdk/-/sdk-7.0.0.tgz#6d4dafe856efbe188bd09e1bb286d5af8ec80d67"
