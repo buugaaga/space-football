@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   Box,
   IconButton,
@@ -7,7 +7,6 @@ import {
   Text,
   Container,
   Button,
-  Stack,
 } from "@chakra-ui/react";
 
 import front1 from "../assets/front1.jpg";
@@ -20,6 +19,7 @@ import front6 from "../assets/front6.jpg";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 // Settings for the slider
 const settings = {
@@ -35,6 +35,9 @@ const settings = {
 };
 
 export default function FrontCarousel() {
+  const { t, i18n } = useTranslation();
+  console.log("language", i18n.language);
+
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
@@ -46,55 +49,57 @@ export default function FrontCarousel() {
 
   // This list contains all the data for carousels
   // This can be static or loaded from a server
-  const cards = [
-    {
-      title: "SHAPE YOUR BODY",
-      text: "TRAINING HARD",
-      be: "BE",
-      strong: "POWER",
-      image: front2,
-    },
-    {
-      title: "SHAPE YOUR BODY",
-      text: "NO GAIN",
-      be: "NO",
-      strong: "PAIN",
-      image: front3,
-    },
-    {
-      title: "SHAPE YOUR BODY",
-      text: "TRAINING HARD",
-      be: "BE",
-      strong: "HERO",
-      image: front4,
-    },
-    {
-      title: "SHAPE YOUR BODY",
-      text: "TRAINING HARD",
-      be: "BE",
-      strong: "MIGHTY",
-      image: front1,
-    },
-    {
-      title: "SHAPE YOUR BODY",
-      text: "TRAINING HARD",
-      be: "BE",
-      strong: "STRONG",
-      image: front5,
-    },
-    {
-      title: "SHAPE YOUR BODY",
-      text: "WORK INSANE",
-      be: "BE",
-      strong: "FLAME",
-      image: front6,
-    },
-  ];
+  const cards = useMemo(() => {
+    return [
+      {
+        title: "SHAPE YOUR BODY",
+        text: "TRAINING HARD",
+        be: "BE",
+        strong: "POWER",
+        image: front2,
+      },
+      {
+        title: "SHAPE YOUR BODY",
+        text: "NO GAIN",
+        be: "NO",
+        strong: "PAIN",
+        image: front3,
+      },
+      {
+        title: "SHAPE YOUR BODY",
+        text: "TRAINING HARD",
+        be: "BE",
+        strong: "HERO",
+        image: front4,
+      },
+      {
+        title: "SHAPE YOUR BODY",
+        text: "TRAINING HARD",
+        be: "BE",
+        strong: "MIGHTY",
+        image: front1,
+      },
+      {
+        title: "SHAPE YOUR BODY",
+        text: "TRAINING HARD",
+        be: "BE",
+        strong: "STRONG",
+        image: front5,
+      },
+      {
+        title: "SHAPE YOUR BODY",
+        text: "WORK INSANE",
+        be: "BE",
+        strong: "FLAME",
+        image: front6,
+      },
+    ];
+  }, []);
 
   return (
     <Box
       position={"relative"}
-      height={"150vh"}
+      // height={"150vh"}
       width={"full"}
       overflow={"hidden"}
       mt="-50"
@@ -151,7 +156,7 @@ export default function FrontCarousel() {
             backgroundSize="cover"
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
-            backgroundPositionX="fixed"
+            // backgroundPositionX="fixed"
             backgroundAttachment="fixed"
             // background= "rgb(255,255,255)"
             // background= "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%, rgba(0,0,0,1) 100%)"
@@ -162,8 +167,8 @@ export default function FrontCarousel() {
               {/* <Center> */}
 
               {/* </Center> */}
-              <Stack
-                spacing={6}
+              <Box
+                // spacing={6}
                 w={"full"}
                 maxW={"lg"}
                 position="absolute"
@@ -201,9 +206,10 @@ export default function FrontCarousel() {
                   {card.text}
                 </Text>
                 <Button color="#fff" ml="2" bg={"#f45f02"}>
-                  GET INFO
+                  {/* GET INFO */}
+                  {t("getInfo")}
                 </Button>
-              </Stack>
+              </Box>
             </Container>
           </Box>
         ))}
