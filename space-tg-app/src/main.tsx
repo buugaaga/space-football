@@ -6,6 +6,9 @@ import "./main.css";
 import { appTheme } from "./theme/theme.ts";
 import { BrowserRouter } from "react-router-dom";
 import "./i18n";
+import WebApp from "@twa-dev/sdk";
+
+WebApp.ready();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
