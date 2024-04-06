@@ -5,22 +5,18 @@ import App from "./App.tsx";
 import "./main.css";
 import { appTheme } from "./theme/theme.ts";
 import { BrowserRouter } from "react-router-dom";
+import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import "./i18n";
+import { APP_URL } from "./shared/constants.ts";
 // import WebApp from "@twa-dev/sdk";
-import { SDKProvider, type SDKInitOptions } from "@tma.js/sdk-react";
 
 // WebApp.ready();
 
 export function Root() {
-  const options: SDKInitOptions = {
-    acceptCustomStyles: true,
-    cssVars: true,
-  };
-
   return (
-    <SDKProvider options={options}>
+    <TonConnectUIProvider manifestUrl={`${APP_URL}/tonconnect-manifest.json`}>
       <App />
-    </SDKProvider>
+    </TonConnectUIProvider>
   );
 }
 
