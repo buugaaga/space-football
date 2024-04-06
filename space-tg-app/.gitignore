@@ -25,3 +25,6 @@ dist-ssr
 
 # certs
 .cert
+
+# other
+.DS_Store

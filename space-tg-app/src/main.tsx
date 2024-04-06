@@ -6,10 +6,10 @@ import "./main.css";
 import { appTheme } from "./theme/theme.ts";
 import { BrowserRouter } from "react-router-dom";
 import "./i18n";
-import WebApp from "@twa-dev/sdk";
+// import WebApp from "@twa-dev/sdk";
 import { SDKProvider, type SDKInitOptions } from "@tma.js/sdk-react";
 
-WebApp.ready();
+// WebApp.ready();
 
 export function Root() {
   const options: SDKInitOptions = {
