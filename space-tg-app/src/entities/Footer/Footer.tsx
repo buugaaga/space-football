@@ -70,24 +70,11 @@ export default function Footer() {
       bgGradient={
         "linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(64,64,64,1) 100%)"
       }
+      position={"fixed"}
+      left={0}
+      bottom={0}
+      width="100%"
     >
-      <Container
-        as={Stack}
-        maxW={"6xl"}
-        py={4}
-        spacing={4}
-        justify={"center"}
-        align={"center"}
-      >
-        {/* <Image src={logo} /> */}
-        <Stack direction={"row"} spacing={6}>
-          <Link href={"#"}>Home</Link>
-          <Link href={"#"}>About</Link>
-          <Link href={"#"}>Blog</Link>
-          <Link href={"#"}>Contact</Link>
-        </Stack>
-      </Container>
-
       <Box
         borderTopWidth={1}
         borderStyle={"solid"}
@@ -102,7 +89,6 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 suFi. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
@@ -119,3 +105,20 @@ export default function Footer() {
     </Box>
   );
 }
+
+// {/* <Container
+// as={Stack}
+// maxW={"6xl"}
+// py={4}
+// spacing={4}
+// justify={"center"}
+// align={"center"}
+// >
+// {/* <Image src={logo} /> */}
+// <Stack direction={"row"} spacing={6}>
+//   <Link href={"#"}>Home</Link>
+//   <Link href={"#"}>About</Link>
+//   <Link href={"#"}>Blog</Link>
+//   <Link href={"#"}>Contact</Link>
+// </Stack>
+// </Container> */}

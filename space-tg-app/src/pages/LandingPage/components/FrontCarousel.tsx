@@ -8,14 +8,10 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
+import messiImg from "../assets/messi.jpeg";
+import ronaldoImg from "../assets/cristiano-ronaldo.jpeg";
+import ronaldinioImg from "../assets/ronaldinio.jpeg";
 
-import front1 from "../assets/front1.jpg";
-import front2 from "../assets/front2.jpg";
-import front3 from "../assets/front3.jpg";
-import front4 from "../assets/front4.jpg";
-import front5 from "../assets/front5.jpg";
-import front6 from "../assets/front6.jpg";
-// Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
@@ -52,47 +48,33 @@ export default function FrontCarousel() {
   const cards = useMemo(() => {
     return [
       {
-        title: "SHAPE YOUR BODY",
-        text: "TRAINING HARD",
+        title: "Lionel Messi",
+        text: "Being a leader means taking responsibility and inspiring others to be their best.",
         be: "BE",
-        strong: "POWER",
-        image: front2,
+        strong: "TALENT",
+        image: messiImg,
       },
       {
-        title: "SHAPE YOUR BODY",
-        text: "NO GAIN",
-        be: "NO",
-        strong: "PAIN",
-        image: front3,
+        title: "Cristiano Ronaldo",
+        text: "I've never tried to hide the fact that it is my intention to be the best",
+        be: "BE",
+        strong: "BEST",
+        image: ronaldoImg,
       },
       {
-        title: "SHAPE YOUR BODY",
-        text: "TRAINING HARD",
+        title: "Ronaldinho Caucho",
+        text: "Our confidence comes from our preparation.",
         be: "BE",
-        strong: "HERO",
-        image: front4,
+        strong: "PERSEVERANCE",
+        image: ronaldinioImg,
       },
-      {
-        title: "SHAPE YOUR BODY",
-        text: "TRAINING HARD",
-        be: "BE",
-        strong: "MIGHTY",
-        image: front1,
-      },
-      {
-        title: "SHAPE YOUR BODY",
-        text: "TRAINING HARD",
-        be: "BE",
-        strong: "STRONG",
-        image: front5,
-      },
-      {
-        title: "SHAPE YOUR BODY",
-        text: "WORK INSANE",
-        be: "BE",
-        strong: "FLAME",
-        image: front6,
-      },
+      // {
+      //   title: "Andrey Arshavin",
+      //   text: "TRAINING HARD",
+      //   be: "BE",
+      //   strong: "HERO",
+      //   image: arshavinImg,
+      // },
     ];
   }, []);
 

@@ -16,3 +16,11 @@ need installed mkcert
 
 copy all to hosting
 `scp -rp ./dist/* ildar-nasrov@ildar-nasrov.myjino.ru:/home/users/i/ildar-nasrov/domains/tgapp.dobromam.ru`
+
+remove prev version site and copy new version after building
+
+`ssh ildar-nasrov@ildar-nasrov@ildar-nasrov.myjino.ru "rm -rf /home/users/i/ildar-nasrov/domains/tgapp.dobromam.ru/*" & scp -rp ./dist/* ildar-nasrov@ildar-nasrov.myjino.ru:/home/users/i/ildar-nasrov/domains/tgapp.dobromam.ru`
+
+or sepratelly
+remove `ssh ildar-nasrov@ildar-nasrov@ildar-nasrov.myjino.ru "rm -rf /home/users/i/ildar-nasrov/domains/tgapp.dobromam.ru/*"`
+copy `scp -rp ./dist/* ildar-nasrov@ildar-nasrov.myjino.ru:/home/users/i/ildar-nasrov/domains/tgapp.dobromam.ru`
