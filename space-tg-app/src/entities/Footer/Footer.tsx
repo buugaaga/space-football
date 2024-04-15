@@ -2,16 +2,12 @@ import {
   Box,
   chakra,
   Container,
-  // Image,
-  Link,
   Stack,
-  Text,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode, SVGProps } from "react";
-// import logo from "../../assets/logo.jpg";
 
 export const Logo = (props: SVGProps<SVGSVGElement>) => {
   return (
@@ -105,20 +101,3 @@ export default function Footer() {
     </Box>
   );
 }
-
-// {/* <Container
-// as={Stack}
-// maxW={"6xl"}
-// py={4}
-// spacing={4}
-// justify={"center"}
-// align={"center"}
-// >
-// {/* <Image src={logo} /> */}
-// <Stack direction={"row"} spacing={6}>
-//   <Link href={"#"}>Home</Link>
-//   <Link href={"#"}>About</Link>
-//   <Link href={"#"}>Blog</Link>
-//   <Link href={"#"}>Contact</Link>
-// </Stack>
-// </Container> */}
