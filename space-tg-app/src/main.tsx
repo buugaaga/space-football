@@ -7,7 +7,7 @@ import { appTheme } from "./theme/theme.ts";
 import { BrowserRouter } from "react-router-dom";
 import { TonConnectUIProvider } from "@tonconnect/ui-react";
 import "./i18n";
-import { APP_URL } from "./shared/constants.ts";
+import { APP_URL } from "./shared/constants/api.constants.ts";
 // import WebApp from "@twa-dev/sdk";
 
 // WebApp.ready();

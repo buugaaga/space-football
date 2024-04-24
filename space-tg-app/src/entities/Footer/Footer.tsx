@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { ReactNode, SVGProps } from "react";
 
 export const Logo = (props: SVGProps<SVGSVGElement>) => {
@@ -85,19 +85,23 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={"YouTube"} href={"#"}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
-              <FaInstagram />
-            </SocialButton>
-          </Stack>
+          <SocialButton label={"User"} href={"/user-lk"}>
+            <FaUser />
+          </SocialButton>
         </Container>
       </Box>
     </Box>
   );
 }
+
+// <Stack direction={"row"} spacing={6}>
+// <SocialButton label={"Twitter"} href={"#"}>
+//   <FaTwitter />
+// </SocialButton>
+// <SocialButton label={"YouTube"} href={"#"}>
+//   <FaYoutube />
+// </SocialButton>
+// <SocialButton label={"Instagram"} href={"#"}>
+//   <FaInstagram />
+// </SocialButton>
+// </Stack>
