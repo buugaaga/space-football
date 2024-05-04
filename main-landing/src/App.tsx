@@ -95,7 +95,138 @@ function App() {
           </Container>
         </Box>
         <Box bgColor="#f5f5f5">
-          <Container maxW="1200px" h="3300px" pt="135px" pb="165px"></Container>
+          <Container maxW="1200px" h="3300px" pt="135px" pb="165px">
+            <Flex direction="column" gap="50px">
+              <Flex justify="space-between" align="center">
+                <Box as="img" src="/images/1.png" maxW="48%"></Box>
+                <Box>
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    SPORTSBASE SOLUTIONS
+                  </Box>
+                  <Box mb="36px" fontSize="18px">
+                    <p>• SportsBase football video platform;</p>
+                    <p>• Technical match filming;</p>
+                    <p>• Video and advanced statistics;</p>
+                    <p>• Detailed post-match reports;</p>
+                    <p>• Statistical live data collection;</p>
+                    <p>• Player fitness tracking reports;</p>
+                    <p>• Raw data delivered in live mode.</p>
+                  </Box>
+                  <Box fontSize="18px">
+                    Services to be launched in the short term:
+                    <p>• 24/7 technical support;</p>
+                    <p>• Live fitness tracking;</p>
+                    <p>• Analytical opponent’s prescout reports;</p>
+                    <p>• Post-match referee reports;</p>
+                    <p>• Offline and online tagging software.</p>
+                  </Box>
+                </Box>
+              </Flex>
+              <Flex justify="space-between" align="center">
+                <Box>
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    SPORTSBASE PLATFORM FOR COACHES
+                  </Box>
+                  <Box fontSize="18px">
+                    <p>• Video breakdown of own and opponent’s matches;</p>
+                    <p>
+                      • Various options to review a match: full match video,
+                      ball-in-play mode, and highlights;
+                    </p>
+                    <p>
+                      • Several video tracks available for a review: TV streams
+                      or technical footage;
+                    </p>
+                    <p>
+                      • Video player with the option to accelerate the video
+                      speed;
+                    </p>
+                    <p>
+                      • Quick video download with the 1080p or 720p resolution;
+                    </p>
+                    <p>• Customizable statistical spreadsheets.</p>
+                  </Box>
+                </Box>
+                <Box as="img" src="/images/2.png" maxW="48%"></Box>
+              </Flex>
+              <Flex justify="space-between" align="center">
+                <Box as="img" src="/images/3.png" maxW="48%"></Box>
+                <Box pl="100px">
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    SPORTSBASE PLATFORM FOR PLAYER RECRUITMENT
+                  </Box>
+                  <Box fontSize="18px">
+                    <p>
+                      • Filter players by their statistics to find the best
+                      candidates;
+                    </p>
+                    <p>• Quick access to review all player actions;</p>
+                    <p>
+                      • Watch statistical metrics that are linked to the video;
+                    </p>
+                    <p>
+                      • Share any video in two clicks with your team via email.
+                    </p>
+                  </Box>
+                </Box>
+              </Flex>
+              <Flex justify="space-between" align="center">
+                <Box>
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    STATISTICAL REPORTS
+                  </Box>
+                  <Box fontSize="18px">
+                    <p>• Real-time statistical match analysis;</p>
+                    <p>• Statistical post-match team and player report;</p>
+                    <p>• Team and tournament summary reports;</p>
+                    <p>• New advanced metrics developed;</p>
+                    <p>• Data quality control.</p>
+                  </Box>
+                </Box>
+                <Box as="img" src="/images/4.png" maxW="48%"></Box>
+              </Flex>
+              <Flex justify="space-between" align="center">
+                <Box as="img" src="/images/5-1.png" maxW="48%"></Box>
+                <Box>
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    PLAYER FITNESS TRACKING REPORTS
+                  </Box>
+                  <Box fontSize="18px">
+                    <p>
+                      • Fitness tracking data about your own team as well as the
+                      opponents;
+                    </p>
+                    <p>
+                      • Speed and covered distance metrics available for each
+                      player;
+                    </p>
+                    <p>
+                      • Player position charts showing the team gaps in offense
+                      and defense;
+                    </p>
+                    <p>• New metrics combining event and fitness data;</p>
+                    <p>• Proven data collection methodology.</p>
+                  </Box>
+                </Box>
+              </Flex>
+              <Flex justify="space-between" align="center">
+                <Box pr="50px">
+                  <Box fontSize="26px" fontWeight="bold" mb="24px">
+                    RAW DATA
+                  </Box>
+                  <Box fontSize="18px">
+                    <p>• Over 2500 metrics;</p>
+                    <p>• Data available in XML and JSON formats;</p>
+                    <p>
+                      • Tailor-made assistance and guidance on how to use the
+                      data for a website or on social media.
+                    </p>
+                  </Box>
+                </Box>
+                <Box as="img" src="/images/5-2.png" maxW="48%"></Box>
+              </Flex>
+            </Flex>
+          </Container>
         </Box>
       </Box>
     </Box>
